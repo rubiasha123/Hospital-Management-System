@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Patient Registration Form</title>
+
+    <link rel="stylesheet" href="Regform.css">
+</head>
+
+<body>
+
+<div class="container">
+
+    <h1>🏥 RA Hospital Management System</h1>
+    <h2>Patient Registration Form</h2>
+
+    <form>
+
+        <table>
+
+            <tr>
+                <td>Patient ID</td>
+                <td>
+                    <input type="text" value="PAT001" readonly>
+                </td>
+            </tr>
+
+            <tr>
+                <td>First Name</td>
+                <td>
+                    <input type="text" placeholder="Enter First Name" required>
+                </td>
+            </tr>
+
+            <tr>
+                <td>Last Name</td>
+                <td>
+                    <input type="text" placeholder="Enter Last Name" required>
+                </td>
+            </tr>
+
+            <tr>
+                <td>Gender</td>
+                <td>
+                    <input type="radio" name="gender"> Male
+
+                    <input type="radio" name="gender"> Female
+
+                    <input type="radio" name="gender"> Other
+                </td>
+            </tr>
+
+            <tr>
+                <td>Date of Birth</td>
+                <td>
+                    <input type="date" required>
+                </td>
+            </tr>
+
+            <tr>
+                <td>Age</td>
+                <td>
+                    <input type="number" placeholder="Enter Age">
+                </td>
+            </tr>
+
+            <tr>
+                <td>Blood Group</td>
+                <td>
+                    <select required>
+
+                        <option>Select Blood Group</option>
+
+                        <option>A+</option>
+                        <option>A-</option>
+                        <option>B+</option>
+                        <option>B-</option>
+                        <option>AB+</option>
+                        <option>AB-</option>
+                        <option>O+</option>
+                        <option>O-</option>
+
+                    </select>
+                </td>
+            </tr>
+
+            <tr>
+                <td>Mobile Number</td>
+                <td>
+                    <input type="tel" placeholder="Enter Mobile Number">
+                </td>
+            </tr>
+
+            <tr>
+                <td>Emergency Contact</td>
+                <td>
+                    <input type="tel" placeholder="Enter Emergency Contact">
+                </td>
+            </tr>
+
+            <tr>
+                <td>Email</td>
+                <td>
+                    <input type="email" placeholder="Enter Email Address">
+                </td>
+            </tr>
+
+            <tr>
+                <td>Address</td>
+                <td>
+                    <textarea rows="4" placeholder="Enter Address"></textarea>
+                </td>
+            </tr>
+
+            <tr>
+                <td>Department</td>
+                <td>
+
+                    <select>
+
+                        <option>Select Department</option>
+
+                        <option>General Medicine</option>
+                        <option>Cardiology</option>
+                        <option>Orthopedics</option>
+                        <option>Neurology</option>
+                        <option>Pediatrics</option>
+                        <option>Dermatology</option>
+                        <option>ENT</option>
+
+                    </select>
+
+                </td>
+            </tr>
+
+            <tr>
+                <td>Doctor Assigned</td>
+                <td>
+
+                    <select>
+
+                        <option>Select Doctor</option>
+
+                        <option>Dr. John</option>
+                        <option>Dr. Priya</option>
+                        <option>Dr. Kumar</option>
+                        <option>Dr. Smith</option>
+
+                    </select>
+
+                </td>
+            </tr>
+
+            <tr>
+                <td>Appointment Date</td>
+                <td>
+                    <input type="date">
+                </td>
+            </tr>
+
+            <tr>
+                <td>Appointment Time</td>
+                <td>
+                    <input type="time">
+                </td>
+            </tr>
+
+            <tr>
+
+                <td colspan="2" class="buttons">
+
+                    <button type="submit">
+                        Register
+                    </button>
+
+                    <button type="reset">
+                        Reset
+                    </button>
+
+                </td>
+
+            </tr>
+
+        </table>
+
+    </form>
+
+</div>
+
+</body>
+</html>

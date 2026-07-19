@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hospital Login</title>
+    <link rel="stylesheet" href="login.css">
+
+    <script>
+        function Hospital() {
+
+            let UserName = document.getElementById("UserName").value;
+            let Password = document.getElementById("Password").value;
+
+            if (UserName == "Admin" && Password == "1234") {
+                alert("Login Successful");
+                window.location.href = "Admindashboard.html";
+            }
+            else {
+                alert("Invalid Password");
+                return false;
+            }
+
+        }
+    </script>
+
+</head>
+
+<body>
+
+    <div class="container">
+
+        <form class="login">
+
+            <h2>Login HMS</h2>
+
+            <br><br>
+
+            <div class="login-page">
+
+                <label>UserName</label>
+
+                <input type="text" id="UserName" placeholder="Enter UserName">
+
+                <br><br>
+
+                <label>Password</label>
+
+                <input type="password" id="Password" placeholder="Enter Password">
+
+                <br><br>
+                <a href="Admindashbord.html">
+                <button type="button" onclick="Hospital()">
+                    Login
+                </button>
+                </a>
+
+            </div>
+
+        </form>
+
+    </div>
+
+</body>
+</html>
